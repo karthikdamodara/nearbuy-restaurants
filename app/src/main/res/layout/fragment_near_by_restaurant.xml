@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context="com.coupandunia.android.test.fragment.NearByRestaurantFragment">
+
+
+    <TextView
+        android:id="@+id/streetText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:drawableLeft="@drawable/tab_map"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="Fetching Address.."
+        android:textColor="@android:color/black" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/streetText"
+        android:dividerHeight="10dp"
+        android:padding="16dp"></ListView>
+
+    <TextView
+        android:id="@+id/emptyText"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Some thing went wrong"
+        android:textColor="@android:color/black"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
